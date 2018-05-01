@@ -1,0 +1,404 @@
+/*C背景图*/
+.c_background{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: 100% 100%;
+}
+.c_background_top{
+	width: 100%;
+	height: 71.6%;
+	background:url("../imgs/background/c_background_top.png");
+	background-size: 100% 100%;
+}
+.c_background_middle{
+	width: 100%;
+	height: 13.1%;
+	background: url("../imgs/background/c_background_middle.png");
+	background-size: 100% 100%;
+}
+.c_background_bottom{
+	width: 100%;
+	height: 15.3%;
+	background: url("../imgs/background/c_background_botton.png");
+	background-size: 100% 100%;
+}
+/*雪花*/
+#snowflake{
+	width: 100%;
+	height: 100%；
+	position:absolute;
+	top:0;
+	left:0;
+	overflow: hidden;
+}
+/*雪花旋转*/
+.snowRoll{
+	position: absolute;
+	opacity: 0;
+	height: 0.56rem;
+	-webkit-animation:mysnow 20s;
+	-moz-animation:mysnow 20s;
+	animation:mysnow 20s;
+}
+@keyframes mysnow{
+	0%{bottom:100%;}
+	50%{transform:rotate(1080deg);}
+	100%{transform:rotate(0deg) translate3d(0.35rem,0.35rem,0.35rem);}
+}
+@-webkit-keyframes mysnow{
+	0%{bottom:100%;}
+	50%{-webkit-transform:rotate(1080deg);}
+	100%{-webkit-transform:rotate(0deg) translate3d(0.35rem,0.35rem,0.35rem);}
+}
+@-moz-keyframes mysnow{
+	0%{bottom:100%;}
+	50%{-moz-transform:rotate(1080deg);}
+	100%{-moz-transform:rotate(0deg) translate3d(0.35rem,0.35rem,0.35rem);}
+}
+/*小女孩*/
+.girl{
+	width: 1.05rem;/*1057/7 图宽1057，7个精灵图*/
+	height: 2.02rem;/*图高291*/
+	position: absolute;
+	top:37%;
+	right: 40%;
+	background:url("../imgs/girl.png") -5.24rem -0rem no-repeat;/*定位在第七个女孩*/
+	background-size:700% 100%;
+}
+/*女孩转身*/
+.girl-rotate{
+	/*-webkit-animation:girl-rotate 850s step-start 1 forward;
+	-moz-animation:girl-rotate 850s step-start 1 forward;
+	animation-:girl-rotate 850s step-start 1 forward*/
+	-webkit-animation-name: girl-rotate;
+    -webkit-animation-duration: 850ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: step-start;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: girl-rotate;
+    -moz-animation-duration: 850ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: step-start;
+    -moz-animation-fill-mode: forwards;
+}
+/*男孩转身*/
+ .boy-rotate{
+    /*-webkit-animation:boy-rotate 850s step-start 1 forwards;
+    -moz-animation:boy-rotate 850s step-start 1 forwards;
+    animation:boy-rotate 850s step-start 1 forwards;*/
+    -webkit-animation-name: boy-rotate;
+   -webkit-animation-duration: 850ms;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-timing-function: step-start;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation-name: boy-rotate;
+   -moz-animation-duration: 850ms;
+   -moz-animation-iteration-count: 1;
+   -moz-animation-timing-function: step-start;
+   -moz-animation-fill-mode: forwards;
+ }
+@keyframes girl-rotate{
+  0% {background-position: -4.19rem -0rem;}/*第五个*/
+    16.7% {background-position: -1.05rem -0rem;}/*第二个*/
+    33.4% {background-position: -6.29rem -0rem;}/*第七个*/
+    50.1%  {background-position: -0rem -0rem;}/*第一个*/
+    66.8% {background-position: -2.10rem -0rem;}/*第三个*/
+    83.5% {background-position: -3.15rem -0rem;}/*第四个*/
+    100% {background-position: -4.19rem -0rem;}/*第五个*/
+}
+
+@-webkit-keyframes girl-rotate{
+  0% {background-position: -4.19rem -0rem;}/*第五个*/
+    16.7% {background-position: -1.05rem -0rem;}/*第二个*/
+    33.4% {background-position: -6.29rem -0rem;}/*第七个*/
+    50.1%  {background-position: -0rem -0rem;}/*第一个*/
+    66.8% {background-position: -2.10rem -0rem;}/*第三个*/
+    83.5% {background-position: -3.15rem -0rem;}/*第四个*/
+    100% {background-position: -4.19rem -0rem;}/*第五个*/
+}
+@-moz-keyframes girl-rotate{
+ 0% {background-position: -4.19rem -0rem;}/*第五个*/
+    16.7% {background-position: -1.05rem -0rem;}/*第二个*/
+    33.4% {background-position: -6.29rem -0rem;}/*第七个*/
+    50.1%  {background-position: -0rem -0rem;}/*第一个*/
+    66.8% {background-position: -2.10rem -0rem;}/*第三个*/
+    83.5% {background-position: -3.15rem -0rem;}/*第四个*/
+    100% {background-position: -4.19rem -0rem;}/*第五个*/
+}
+@keyframes boy-rotate{
+  0% {background-position: -4.19rem -2.02rem;}/*第二行第五个*/
+    16.7% {background-position: -1.04rem -0rem;}/*第一行第二个*/
+    33.4% {background-position: -3.15rem -2.02rem;}/*第二行第四个*/
+    50.1%  {background-position: -0px -0px;}/*第一行第一个*/
+    66.8% {background-position: -6.27rem -2.02rem;}/*第二行第七个*/
+    83.5% {background-position: -5.23rem -2.02rem;}/*第二行第六个*/
+    100% {background-position: -4.19rem -2.02rem;}/*第二行第五个*/
+}
+@-webkit-keyframes boy-rotate{
+  0% {background-position: -4.19rem -2.02rem;}/*第二行第五个*/
+    16.7% {background-position: -1.04rem -0rem;}/*第一行第二个*/
+    33.4% {background-position: -3.15rem -2.02rem;}/*第二行第四个*/
+    50.1%  {background-position: -0px -0px;}/*第一行第一个*/
+    66.8% {background-position: -6.27rem -2.02rem;}/*第二行第七个*/
+    83.5% {background-position: -5.23rem -2.02rem;}/*第二行第六个*/
+    100% {background-position: -4.19rem -2.02rem;}/*第二行第五个*/
+}
+@-moz-keyframes boy-rotate{
+ 0% {background-position: -4.19rem -2.02rem;}/*第二行第五个*/
+    16.7% {background-position: -1.04rem -0rem;}/*第一行第二个*/
+    33.4% {background-position: -3.15rem -2.02rem;}/*第二行第四个*/
+    50.1%  {background-position: -0px -0px;}/*第一行第一个*/
+    66.8% {background-position: -6.27rem -2.02rem;}/*第二行第七个*/
+    83.5% {background-position: -5.23rem -2.02rem;}/*第二行第六个*/
+    100% {background-position: -4.19rem -2.02rem;}/*第二行第五个*/
+}
+
+/*桥*/
+.bridge-bottom{
+	width: 41%;
+	height: 24%;
+	position: absolute;
+	top:76%;
+	left:29.5%;
+	overflow: hidden;
+}
+/*波浪水布局*/
+.water{
+	width: 100%;
+	height: 100%;
+}
+.water_1,
+.water_2,
+.water_3,
+.water_4{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	-webkit-animation:shake 40s alternate linear infinite;
+	-moz-animation:shake 40s alternate linear infinite;
+	animation:shake 40s alternate linear infinite;
+}
+.water_1{
+	width: 0.91rem;/*精灵图中第二条河的宽*/
+	height: 0.1rem;
+	top:13%;
+	left: 35%;
+	background:url("../imgs/water.png") -1.81rem 0rem no-repeat;/*定位在精灵图中第二条河*/
+	
+}
+.water_2{
+	width: 1.12rem;/*精灵图中第四条河的宽*/
+	height: 0.06rem;
+	top:28%;
+	left: 45%;
+	background:url("../imgs/water.png") -4.81rem 0rem no-repeat;/*定位在精灵图中第四条河*/
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+	
+}
+.water_3{
+	width:1.81rem;/*精灵图中第一条河的宽*/
+	height: 0.2rem;
+	top:50%;
+	left: 15%;
+	background:url("../imgs/water.png") -0rem -0rem no-repeat;/*定位在精灵图中第一条河*/
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+	
+}
+.water_4{
+	width: 2.09rem;/*精灵图中第三条河的宽*/
+	height: 0.08rem;
+	top:75%;
+	left: 30%;
+	background:url("../imgs/water.png") -2.72rem 0rem no-repeat;/*定位在精灵图中第三条河*/
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+	
+}
+@keyframes shake{
+	0%,100%{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,30%,50%,70%,90%{
+		-webkit-transform: translateX(-0.21rem);
+		-ms-transform: translateX(-0.21rem);
+		-o-transform: translateX(-0.21rem);
+		transform: translateX(-0.21rem);
+	}
+	20%,40%,60%,80%{
+		-webkit-transform: translateX(0.21rem);
+		-ms-transform: translateX(0.21rem);
+		-o-transform: translateX(0.21rem);
+		transform: translateX(0.21rem);
+	}
+}
+@-webkit-keyframes shake{
+	0%,100%{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,30%,50%,70%,90%{
+		-webkit-transform: translateX(-0.21rem);
+		-ms-transform: translateX(-0.21rem);
+		-o-transform: translateX(-0.21rem);
+		transform: translateX(-0.21rem);
+	}
+	20%,40%,60%,80%{
+		-webkit-transform: translateX(0.21rem);
+		-ms-transform: translateX(0.21rem);
+		-o-transform: translateX(0.21rem);
+		transform: translateX(0.21rem);
+	}
+}
+@-moz-keyframes shake{
+	0%,100%{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,30%,50%,70%,90%{
+		-webkit-transform: translateX(-0.21rem);
+		-ms-transform: translateX(-0.21rem);
+		-o-transform: translateX(-0.21rem);
+		transform: translateX(-0.21rem);
+	}
+	20%,40%,60%,80%{
+		-webkit-transform: translateX(0.21rem);
+		-ms-transform: translateX(0.21rem);
+		-o-transform: translateX(0.21rem);
+		transform: translateX(0.21rem);
+	}
+}
+/*星星*/
+.stars{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+/*animation: name duration timing-function delay iteration-count direction;*/
+.stars>li{
+	width: 0.21rem;
+	height: 0.22rem;
+	position: absolute;
+	background: url("../imgs/stars.png");
+
+	 -webkit-animation:flash 5s ease-in-out infinite alternate;
+	-o-animation:flash 5s ease-in-out infinite alternate;
+	animation:flash 5s ease-in-out infinite alternate;
+	
+}
+.stars1 {
+    top: 20%;
+    left: 30%;
+    
+}
+
+.stars2 {
+    top: 15%;
+    left: 20%;
+    
+}
+
+.stars3 {
+    top: 25%;
+    left: 85%;
+    
+}
+
+.stars4 {
+    top: 30%;
+    left: 70%;
+   
+}
+
+.stars5 {
+    top: 25%;
+    left: 20%;
+    
+}
+
+.stars6 {
+    top: 10%;
+    left: 65%;
+}
+@keyframes flash{
+	0%,50%,100%{opacity: 1;}
+	25%,75%{opacity: 0;}
+}
+@-webkit-keyframes flash{
+	0%,50%,100%{opacity: 1;}
+	25%,75%{opacity: 0;}
+}
+@-moz-keyframes flash{
+	0%,50%,100%{opacity: 1;}
+	25%,75%{opacity: 0;}
+}
+/*文字效果*/
+.logo{
+	width: 1.28rem;
+	height: 0.56rem;
+	position: absolute;
+	top:0.21rem;
+	left:50%;
+	margin-left: -0.64rem;
+	display: none;
+	z-index: 99999;
+	background:url("../imgs/TElogo.png");
+	background-size:100% 100%;
+}
+.logolightSpeedIn{
+	/*display: block;
+	-webkit-animation:lightSpeedIn 1s ease-out;
+	-moz-animation:lightSpeedIn 1s ease-out;
+	animation-:lightSpeedIn 1s ease-out;*/
+	display: block;
+    -webkit-animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: lightSpeedIn;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1s;
+}
+@-webkit-keyframes lightSpeedIn{/*skewX定义沿着 X 轴的 2D 倾斜转换。*/
+	0% {-webkit-transform: translate3d(100%, 0, 0) skewX(-30deg)  opacity: 0;}
+    60% {-webkit-transform: skewX(20deg); opacity: 1;}
+    80% {-webkit-transform: skewX(-5deg); opacity: 1;}
+    100% {-webkit-transform: none; opacity: 1;}
+}
+@-moz-keyframes lightSpeedIn{/*skewX定义沿着 X 轴的 2D 倾斜转换。*/
+	0% {-moz-transform: translate3d(100%, 0, 0) skewX(-30deg)  opacity: 0;}
+    60% {-moz-transform: skewX(20deg); opacity: 1;}
+    80% {-moz-transform: skewX(-5deg); opacity: 1;}
+    100% {-moz-transform: none; opacity: 1;}
+}
+.logoshake{
+	-webkit-animation:logoshake 0.5s;
+	-moz-animation:logoshake 0.5s;
+	animation:logoshake 0.5s;
+	/*-webkit-animation-name: logoshake;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-name: logoshake;
+    -moz-animation-duration: 0.5s;*/
+}
+/* logo左右晃动效果 */ 
+@-webkit-keyframes logoshake{
+	0%,100%{-webkit-transform:translateX(0);}
+	10%,30%,50%,70%,90%{-webkit-transform:translateX(-0.03rem);}
+	20%,40%,60%,80%{-webkit-transform:translateX(0.07rem);}
+}
+@-moz-keyframes logoshake{
+	0%,100%{-moz-transform:translateX(0);}
+	10%,30%,50%,70%,90%{-moz-transform:translateX(-0.03rem);}
+	20%,40%,60%,80%{-moz-transform:translateX(0.07rem);}
+}

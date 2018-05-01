@@ -1,0 +1,125 @@
+/*背景图*/
+.b_background{
+	width: 100%;
+	height: 100%;
+	background-image: url("../imgs/QixiB-dark.png");
+	position: absolute;
+	background-size: 100% 100%;
+}
+/*预加载图片*/
+.b_background_preload{
+	background: url("../imgs/QixiB-bright.png") no-repeat -69.44rem -69.44rem;
+}
+/*亮灯*/
+.lamp-bright{
+	background-image: url("../imgs/QixiB-bright.png");
+}
+/*商店*/
+.shop {
+    width: 39.5%;
+    height: 35.5%;
+    position: absolute;
+    left: 29%;
+    top: 36.5%;
+}
+
+.door {
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    top: 32%;
+    height: 68%;
+    overflow: hidden;
+    left: 58.5%;
+}
+
+.door-left,
+.door-right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.door-left {
+    left: 0%;
+    background: url("../imgs/door-left.png");
+    background-size: 100% 100%;
+}
+
+.door-right {
+    left: 50%;
+    background: url("../imgs/door-right.png");
+    background-size: 100% 100%;
+}
+/*鸟*/
+.bird{
+	min-width: 0.63rem;
+	min-height: 0.49rem;
+	position: absolute;
+	top:10%;
+	right: -0.63rem;
+	background: url("../imgs/bird.png") -1.26rem 0rem no-repeat;
+  background-size:300% 100%;
+	z-index: 10; 
+}
+/*鸟飞*/
+.birdFly{
+	-webkit-animation:bird-fly 400ms step-start infinite;
+	-moz-animation:bird-fly 400ms step-start infinite;
+	animation:bird-fly 400ms step-start infinite;
+}
+/*取花*/
+.slowFlowerWalk{
+    /*-webkit-animation:person-flower-slow 950s steps(1,start) infinite;
+    -o-animation:person-flower-slow 950s steps(1,start) infinite;
+    animation:person-flower-slow 950s steps(1,start) infinite;*/
+    -webkit-animation-name: person-flower-slow;
+   -webkit-animation-duration: 950ms;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: step-start;/*step-start=steps(1,start)*/
+   -moz-animation-name: person-flower-slow;
+   -moz-animation-duration: 950ms;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: step-start;
+}
+/*鸟飞动作*/
+@keyframes bird-fly{
+	0%{background-position:-1.26rem 0rem;} /*第三个*/
+	 50%{background-position:0rem 0rem;}/*第一个*/
+	 75%{background-position:-0.63rem 0rem;}/*第二个*/
+	 100%{background-position:-1.26rem 0rem;}/*第三个*/
+}
+@-webkit-keyframes bird-fly{
+	0%{background-position:-1.26rem 0rem;} /*第三个*/
+   50%{background-position:0rem 0rem;}/*第一个*/
+   75%{background-position:-0.63rem 0rem;}/*第二个*/
+   100%{background-position:-1.26rem 0rem;}/*第三个*/
+}
+@-moz-keyframes bird-fly{
+	0%{background-position:-1.26rem 0rem;} /*第三个*/
+   50%{background-position:0rem 0rem;}/*第一个*/
+   75%{background-position:-0.63rem 0rem;}/*第二个*/
+   100%{background-position:-1.26rem 0rem;}/*第三个*/
+}
+/*取花动作*/
+@keyframes person-flower-slow{
+    0%{background-position: -3.15rem -0rem}/*第四个*/
+    25%{background-position: -6.28rem -0rem;}/*第七个*/
+   50% {background-position: -3.13rem -0rem;}/*第四个*/
+   75% {background-position: -5.23rem -0rem;}/*第六个*/
+   100% {background-position: -2.08rem -0rem;}/*第三个*/
+}
+@-webkit-keyframes person-flower-slow{
+   0%{background-position: -3.15rem -0rem}/*第四个*/
+    25%{background-position: -6.28rem -0rem;}/*第七个*/
+   50% {background-position: -3.13rem -0rem;}/*第四个*/
+   75% {background-position: -5.23rem -0rem;}/*第六个*/
+   100% {background-position: -2.08rem -0rem;}/*第三个*/
+}
+@-moz-keyframes person-flower-slow{
+    0%{background-position: -3.15rem -0rem}/*第四个*/
+    25%{background-position: -6.28rem -0rem;}/*第七个*/
+   50% {background-position: -3.13rem -0rem;}/*第四个*/
+   75% {background-position: -5.23rem -0rem;}/*第六个*/
+   100% {background-position: -2.08rem -0rem;}/*第三个*/
+}

@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+ul,ol,
+li {
+    list-style-type: none;
+}
+
+/*主体部分*/
+#content {
+    width: 100%;
+    height: 100%;
+    /* top: 20%; */
+    overflow: hidden;
+    position: absolute;
+}
+
+.content-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrap > li {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+a {
+   position: absolute;
+   top: 50%;
+   left: 40%;
+}
+.play{
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+.play .mask{
+  position: fixed;
+  top:0rem;
+  left:0rem;
+  width:100%;
+  height: 100%;
+  background:#000;
+  opacity:0.5;
+  z-inex:6;
+  
+}
+.play .music{
+  position: fixed;
+  top:50%;
+  left:50%;
+  width:0.56rem;
+  height:0.56rem;
+  margin:-1.3rem 0 0 -0.8rem;
+  z-index: 7;
+}
+.charactor {
+   left: 6%;
+   top: 55%;
+   position: absolute;
+    width: 100%;
+   height: 100%; 
+   width: 1.05rem;
+   height: 2.02rem;
+   background: url("../imgs/boy.png") -0rem -2.02rem no-repeat;
+   background-size: 700% 200%;
+}
+/* 人物暂停 */
+.pauseWalk {
+-webkit-animation-play-state: paused;
+-moz-animation-play-state: paused;
+animation-play-state: paused;
+} 
+.boyOriginal{
+    background-position: -1.04rem 0rem;
+}
+.slowWalk {
+   -webkit-animation-name: person-slow;
+   -webkit-animation-duration: 950ms;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: steps(1, start);
+   -moz-animation-name: person-slow;
+   -moz-animation-duration: 950ms;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: steps(1, start)
+}
+
+/*普通慢走*/
+
+@-webkit-keyframes person-slow {
+   0% {
+       background-position: -0rem -2.02rem;/*第二行第一个*/
+   }
+   25% {
+       background-position: -4.18rem -0rem;/*第一行第五个*/
+   }
+   50% {
+       background-position: -2.10rem -2.02rem;/*第二行第三个*/
+   }
+   75% {
+       background-position: -1.05rem -2.02rem;/*第二行第二个*/
+   }
+   100% {
+       background-position: -0rem -2.02rem;/*第二行第一个*/
+   }
+}
+
+@-moz-keyframes person-slow {
+   0% {
+       background-position: -0rem -2.02rem;/*第二行第一个*/
+   }
+   25% {
+       background-position: -4.18rem -0rem;/*第一行第五个*/
+   }
+   50% {
+       background-position: -2.10rem -2.02rem;/*第二行第三个*/
+   }
+   75% {
+       background-position: -1.05rem -2.02rem;/*第二行第二个*/
+   }
+   100% {
+       background-position: -0rem -2.02rem;/*第二行第一个*/
+   }
+}
